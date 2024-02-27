@@ -1,5 +1,5 @@
 import React from 'react'
-import {useWorkoutContext, useWorkoutsContext} from '../hooks/useWorkoutsContext'
+import { useWorkoutsContext} from '../hooks/useWorkoutsContext'
 function WorkoutDetails({workout}) {
 
   const {dispatch}= useWorkoutsContext()
