@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
 import { WorkoutContextProvider } from "./context/WorkoutContext";
 import { AuthContextProvider } from "./context/AuthContext";
 
@@ -11,9 +10,7 @@ root.render(
   <React.StrictMode>
     <AuthContextProvider>
       <WorkoutContextProvider>
-        <BrowserRouter>
           <App />
-        </BrowserRouter>
       </WorkoutContextProvider>
     </AuthContextProvider>
   </React.StrictMode>
